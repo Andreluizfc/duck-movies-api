@@ -1,0 +1,6 @@
+fastapi==0.109.2
+uvicorn==0.26.0
+duckdb==0.10.0
+pytest==8.0.1
+requests==2.31.0
+pandas==2.2.0
