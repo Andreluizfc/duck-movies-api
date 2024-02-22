@@ -36,7 +36,7 @@
     
     Ensure that the FastAPI application is fully started before running the tests.
 
-    Execute the tests with the following command:
+    Execute the tests with the following command in another terminal:
 
     ```bash
     docker-compose up run_tests
