@@ -27,9 +27,9 @@
 
     Start the FastAPI application with the following command:
     
-        ```bash
-        docker-compose up run_api
-        ```
+    ```bash
+    docker-compose up run_api
+    ```
     Wait until you see logs indicating that the application is running.
 
 4. **Run Tests:**
@@ -44,10 +44,11 @@
    
 ## Access the API:
 
-    Once the application is running, access the API at http://0.0.0.0:8000 in your browser or use tools like curl or Postman to interact with the API.
+Once the application is running, access the API at http://0.0.0.0:8000 in your browser or use tools like curl or Postman to interact with the API.
 
 ## Notes:
-    If you encounter issues, make sure Docker is properly installed, and there are no port conflicts on your machine.
 
-    If the route http://0.0.0.0:8000 in unnacessbile, try to run the app in http://127.0.0.1 changing it in the docker-compose.yaml file
+If you encounter issues, make sure Docker is properly installed, and there are no port conflicts on your machine.
+
+If the route http://0.0.0.0:8000 in unnacessbile, try to run the app in http://127.0.0.1 changing it in the docker-compose.yaml file
     
