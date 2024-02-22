@@ -10,6 +10,9 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Set the PYTHONPATH to include the /app folder
+ENV PYTHONPATH=/app:$PYTHONPATH
+
 # Expose the port that FastAPI will run on
 EXPOSE 8000
 

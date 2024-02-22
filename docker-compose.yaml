@@ -9,7 +9,7 @@ services:
 
   run_api:
     build: .
-    command: bash -c "uvicorn api.main:app --host 0.0.0.0 --port 8000 & sleep 10 && tail -f /dev/null"
+    command: bash -c "uvicorn api.main:app --host 0.0.0.0 --port 8000"
     ports:
       - "8000:8000"
     depends_on:
@@ -17,6 +17,6 @@ services:
 
   run_tests:
     build: .
-    command: pytest -vvv api/tests
+    command: pytest -v api/tests --disable-warnings
     depends_on:
       - run_api
